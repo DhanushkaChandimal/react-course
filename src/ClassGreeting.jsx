@@ -1,8 +1,9 @@
 import React, {Component} from "react";
+import "./styles.css";
 
 class Greeting extends Component {
     render() {
-        return <p>This is a class based component!</p>;
+        return <p className="greeting">This is a class based component!</p>;
     }
 }
 
