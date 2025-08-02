@@ -1,4 +1,5 @@
 import React from "react";
+import "./styleRed.css";
 
 function Greeting(){
 
@@ -7,7 +8,12 @@ function Greeting(){
         fontSize: "18px",
         textAlign: "center"
     };
-    return <p style={greetingStyle}>Welcome to the world of react!</p>
+    return (
+        <>
+            <p style={greetingStyle}>Welcome to the world of react!</p>
+            <p className="greeting">Import from red.css!</p>
+        </>
+    );
 }
 
 export default Greeting;
